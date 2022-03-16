@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Eczar:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Aclonica", sans-serif;
+}
+body {
+  background-color: rgb(227, 227, 253);
+}
+.main {
+  width: 100%;
+  height: 25vh;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  font-size: 4.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  margin: 2em;
+  text-shadow: 0 0.5rem 1rem rgba(163, 163, 247, 0.6);
+}
+
+h1:first-child {
+  color: rgb(255, 255, 255);
+}
+
+h1:last-child {
+  color: #020001;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: rgb(227, 227, 253);
+}
+
+h1:last-child:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+h1:first-child:hover ~ h1 {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
