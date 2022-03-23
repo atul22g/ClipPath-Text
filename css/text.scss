@@ -4,12 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+$bg:rgb(227, 227, 253);
+$shadow:rgba(163, 163, 247, 0.6);
+$first:rgb(255, 255, 255);
+$last:#020001;
+$bg2:#00796b;
+$border:#bdbdbd;
+$white:#fff;
+$dot: #b2dfdb;
 html {
   font-size: 62.5%;
   font-family: "Aclonica", sans-serif;
 }
 body {
-  background-color: rgb(227, 227, 253);
+  background-color: $bg;
 }
 /* comman */
 .con {
@@ -26,13 +34,13 @@ body {
     letter-spacing: 1rem;
     cursor: pointer;
     margin: 2em;
-    text-shadow: 0 0.5rem 1rem rgba(163, 163, 247, 0.6);
+    text-shadow: 0 0.5rem 1rem $shadow;
     &:first-child {
-      color: rgb(255, 255, 255);
+      color: $first;
     }
     &:last-child {
-      color: #020001;
-      background-color: rgb(227, 227, 253);
+      color: $last;
+      background-color: $bg;
       &:hover {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
@@ -68,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00796b;
+  background-color: $bg2;
   z-index: 10;
   .center-div {
     position: relative;
@@ -78,8 +86,8 @@ body {
     .outer-ring {
       width: 100px;
       height: 100px;
-      border-top: 4px solid #bdbdbd;
-      border-bottom: 4px solid #bdbdbd;
+      border-top: 4px solid $border;
+      border-bottom: 4px solid $border;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -89,8 +97,8 @@ body {
     .middle-ring {
       width: 80px;
       height: 80px;
-      border-top: 4px solid white;
-      border-bottom: 4px solid white;
+      border-top: 4px solid $white;
+      border-bottom: 4px solid $white;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -100,8 +108,8 @@ body {
     .inner-ring {
       width: 60px;
       height: 60px;
-      border-top: 4px solid #bdbdbd;
-      border-bottom: 4px solid #bdbdbd;
+      border-top: 4px solid $border;
+      border-bottom: 4px solid $border;
       border-right: 4px solid transparent;
       border-left: 4px solid transparent;
       border-radius: 50%;
@@ -112,7 +120,7 @@ body {
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: #b2dfdb;
+      background-color: $dot;
       position: absolute;
       animation: rototering 2s linear infinite;
     }

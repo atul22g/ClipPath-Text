@@ -122,8 +122,8 @@ body {
 #loading .center-div .middle-ring {
   width: 80px;
   height: 80px;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   border-radius: 50%;
